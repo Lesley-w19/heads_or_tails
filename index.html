@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heads or Tails</title>
+
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+
+    <!-- boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <section class="game-wrapper container">
+      <div class="row">
+        <div class="col-sm-12 mb-3">
+           <h1 class="title text-secondary bg-light p-2">Heads or Tails</h1>
+        </div>
+        
+      </div>
+      <div class="row ">
+        <div class="col-sm-12 ">
+         
+          
+          <div id="roundsLeft" class="mb-3 rounds-left text-danger">
+            Rounds Left : <span id="rounds">5</span>
+          </div>
+
+          <div class="playOptions mb-3">
+            <h4 class="mb-3 choose-move">Choose your move</h4>
+            <div>
+              <button class="mx-3 mb-3 head-btn" value="head">
+                <img
+                  src="./assets/images/head-side.png"
+                  alt="head-side"
+                  width="100px"
+                />
+              </button>
+
+              <button class="mx-3 mb-3 tail-btn" value="tail">
+                <img
+                  src="./assets/images/tail-side.png"
+                  alt="tail-side"
+                  width="100px"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="scores text-center">
+            <div class="player-scores  mx-2">
+              <h5 class="text-primary mt-2">Player Score</h5>
+              <p class="player-count">0</p>
+            </div>
+            <div class="computer-scores mx-2">
+              <h5 class="text-primary mt-2">Computer Score</h5>
+              <p class="computer-count">0</p>
+            </div>
+          </div>
+          <div class="result text-capitalize bg-light p-2">Start Game</div>
+
+          <div class="reload d-flex justify-content-center">
+            <button class="btn btn-success px-4 py-2 btn-reload none">
+              Restart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- custom js -->
+    <script src="./assets/main.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
